@@ -1,4 +1,4 @@
-# MexEE 402: Data Preprocessing Case Study
+<img width="886" height="518" alt="image" src="https://github.com/user-attachments/assets/f105994b-cc7c-4145-b04e-85d6002b9103" /># MexEE 402: Data Preprocessing Case Study
 
 MexEE Elective 2: Data Science and Machine Learning
 Batangas State University, Alangilan Campus
@@ -6,10 +6,10 @@ Batangas State University, Alangilan Campus
 
 ## Members
 
-| Name | Student Number | Section |
+| Name | Student Number | MEXE - 4101|
 |---|---|---|
-| Surname, First Name | | |
-| Surname, First Name | | |
+| Surname, First Name | |  MEXE - 4101| 
+| Acupan, Kyla Aprille M. | |  MEXE - 4101
 
 ## Notebook links
 
