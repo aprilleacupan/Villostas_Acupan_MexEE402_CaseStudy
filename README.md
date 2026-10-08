@@ -26,7 +26,7 @@ Batangas State University, Alangilan Campus
 <h2>What we learned</h2>
 
 <h3>Ch1_2_3</h3>
-<p align="justify"><i>The chapter 1_2_3 taught us that data analysis is not just using Python or creating models because every codes has it own function. We learned that data processing is important so that the data is clean and organized. We learned that the raw data can have missing values, duplicates, irrelevant information, and errors that can affect the results. What surprised us the most was how much data quality can affect the results it makes the results clean, easy to understand, and only the needed information for the analysis will be included.  One of the example of this is the Rank Column was dropped because it does not provide information that is needed for the analysis. The chapters made us realized that good analysis starts with good and organized prepared data.  </i></p>
+<p align="justify">The chapter 1_2_3 taught us that data analysis is not just using Python or creating models because every codes has it own function. We learned that data processing is important so that the data is clean and organized. We learned that the raw data can have missing values, duplicates, irrelevant information, and errors that can affect the results. What surprised us the most was how much data quality can affect the results it makes the results clean, easy to understand, and only the needed information for the analysis will be included.  One of the example of this is the Rank Column was dropped because it does not provide information that is needed for the analysis. The chapters made us realized that good analysis starts with good and organized prepared data.</p>
 
 <h3>Ch4</h3>
 <p align="justify"><i>paragraph here</i></p>
