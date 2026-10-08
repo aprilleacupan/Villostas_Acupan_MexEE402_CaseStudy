@@ -48,14 +48,14 @@ Batangas State University, Alangilan Campus
 
 ## Errors we found
 
-When it comes to the code, all of our chapter notebooks run smoothly. We tested this by using Restart and Run All in each notebook, and every cell ran without errors.
+Upon executing all the chapters, when it comes to the code, all of our chapter notebooks run smoothly. We tested this by using Restart and Run All in each notebook, and every cell ran without errors. The only problem/error that we encountered which is under chapter 1_2_3 is that there are some error that occurred because of uploading the vgsales.csv in the file under the content of the chapter every time we rerun the file vgsales.csv file is being removed. 
 
 ## Note on AI tools
 
-Yes, we used an AI tool specifically Claude AI for this project. We used it to fix the format of our chapter questions and answers so they were consistent across all the notebooks. We also used it to understand the topics better and to explain the code, which made it easier for us to write the code in the notebooks. For the README, it helped us organize the layout, including the chapter table with the Colab links, so everything is easy to read and follow.
+Yes, We used an AI tool specifically Claude AI and ChatGPT for this project. We used it to fix the format of our chapter questions and answers so they were consistent across all the notebooks. We also used it to understand the topics better and to explain the code, which made it easier for us to write the code in the notebooks. We also used the AI tool for the comparison of the given code to the generated code by the AI tool for the checking and its functionality. For the README in GitHub, it helped us organize the layout, including the chapter table with the Colab links, so everything is easy to read and follow.
 
 ## References
 
 McKinney, W. (2021). Python for Data Analysis, 3rd ed. O'Reilly.
 VanderPlas, J. Python Data Science Handbook.
-Any other page or article you used.
+
