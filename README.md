@@ -50,21 +50,31 @@ Batangas State University, Alangilan Campus
 
 Upon executing all the chapters, when it comes to the code, all of our chapter notebooks run smoothly. We tested this by using Restart and Run All in each notebook, and every cell ran without errors. The only problem/error that we encountered which is under chapter 1_2_3 is that there are some error that occurred because of uploading the vgsales.csv in the file under the content of the chapter every time we rerun the file vgsales.csv file is being removed. 
 
-Error in Chapter 6,
+### Chapter 6 (Outliers): Empty output when finding outliers
 
-#find outliers
+**Problem:** All cells ran without errors, but in cell 5 the output of `# find outliers` was empty. The code filtered with a Z-score threshold of 3:
 
+```python
+# find outliers
 outliers = data[np.abs(z_scores) > 3]
-
 print("Outliers: ", outliers)
+```
 
-Solution in chapter 6,
+The expected output is `[100]`, but its Z-score is only about **2.61**, which is below the threshold, so nothing was detected.
 
-#find outliers
+**Solution:** Lower the threshold to 2.61:
 
+```python
+# find outliers
 outliers = data[np.abs(z_scores) > 2.61]
-
 print("Outliers: ", outliers)
+```
+
+**Output:**
+
+```
+Outliers:  [100]
+```
 
 In chapter 6 Outliers, All the cell run smoothly but we noticed that when we run the cell 5 we found out that the output in #find outliers is empty due to the reason that on the given code outliers = data[np.abs(z_scores) > 3] is written, but it should be outliers = data[np.abs(z_scores) > 2.61] because the output should be [100] and the Z-score is approximately 2.61.
 
