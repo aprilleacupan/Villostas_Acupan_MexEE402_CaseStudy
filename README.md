@@ -48,7 +48,7 @@ Batangas State University, Alangilan Campus
 
 ## Errors we found
 
-The problem/error that we encountered which is under chapter 1_2_3 is that there are some error that occurred because of uploading the vgsales.csv in the file under the content of the chapter every time we rerun the file vgsales.csv file is being removed. 
+The problem we encountered in Chapters 1, 2, and 3 is that an error occurs when uploading the vgsales.csv file to the chapter's content. Every time we rerun the file, the uploaded vgsales.csv file is removed.
 
 ### Chapter 6 (Outliers): Empty output when finding outliers
 
@@ -66,13 +66,12 @@ print("Outliers: ", outliers)
 # find outliers
 outliers = data[np.abs(z_scores) > 2.61]
 print("Outliers: ", outliers)
-```
+```3
 
 **Output:**
 
 ```
 Outliers:  [100]
-```
 
 In chapter 6 Outliers, All the cell run smoothly but we noticed that when we run the cell 5 we found out that the output in #find outliers is empty due to the reason that on the given code outliers = data[np.abs(z_scores) > 3] is written, but it should be outliers = data[np.abs(z_scores) > 2.61] because the output should be [100] and the Z-score is approximately 2.61. 
 
