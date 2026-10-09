@@ -52,7 +52,7 @@ Upon executing all the chapters, when it comes to the code, all of our chapter n
 
 ### Chapter 6 (Outliers): Empty output when finding outliers
 
-**Problem:** All cells ran without errors, but in cell 5 the output of `# find outliers` was empty. The code filtered with a Z-score threshold of 3:
+**Error:** All cells ran without errors, but in cell 5 the output of `# find outliers` was empty. The code filtered with a Z-score threshold of 3:
 
 ```python
 # find outliers
