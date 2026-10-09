@@ -90,7 +90,7 @@ selector = RFECV(estimator, step=1, cv=5)
 selector = RFECV(estimator, step=1, cv=3)
 ```
 
-The problem in Cell 14 is that RFECV uses cv=5 on a dataset with only 7 rows, resulting in validation folds that are too small to calculate the R 2 score reliably. The solution is to change cv=5 to cv=3, giving each validation fold more samples. We need to fix this to reduce the warnings and make the feature selection results more reliable, although a dataset of only 7 rows is still too small for strong conclusions.
+The error in Cell 14 is that RFECV uses cv=5 on a dataset with only 7 rows, resulting in validation folds that are too small to calculate the R 2 score reliably. The solution is to change cv=5 to cv=3, giving each validation fold more samples. We need to fix this to reduce the warnings and make the feature selection results more reliable, although a dataset of only 7 rows is still too small for strong conclusions.
 
 ## Note on AI tools
 
