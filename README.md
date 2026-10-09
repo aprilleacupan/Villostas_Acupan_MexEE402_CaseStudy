@@ -48,7 +48,7 @@ Batangas State University, Alangilan Campus
 
 ## Errors we found
 
-Upon executing all the chapters, when it comes to the code, all of our chapter notebooks run smoothly. We tested this by using Restart and Run All in each notebook, and every cell ran without errors. The only problem/error that we encountered which is under chapter 1_2_3 is that there are some error that occurred because of uploading the vgsales.csv in the file under the content of the chapter every time we rerun the file vgsales.csv file is being removed. 
+The problem/error that we encountered which is under chapter 1_2_3 is that there are some error that occurred because of uploading the vgsales.csv in the file under the content of the chapter every time we rerun the file vgsales.csv file is being removed. 
 
 ### Chapter 6 (Outliers): Empty output when finding outliers
 
@@ -91,6 +91,38 @@ selector = RFECV(estimator, step=1, cv=3)
 ```
 
 The error in Cell 14 is that RFECV uses cv=5 on a dataset with only 7 rows, resulting in validation folds that are too small to calculate the R 2 score reliably. The solution is to change cv=5 to cv=3, giving each validation fold more samples. We need to fix this to reduce the warnings and make the feature selection results more reliable, although a dataset of only 7 rows is still too small for strong conclusions.
+
+### Chapter 9 (Real-World Application: Data Preprocessing): 
+
+#### Error 1
+
+**Error :** 
+
+```python
+plt.hist(data['Age'].dropna(), alpha=0.5, label='Before discretization')
+```
+
+**Solution 1:** 
+
+```python
+plt.hist(data['Age'].dropna(), alpha=0.5, label='After discretization')
+```
+
+#### Error 2
+
+**Error:** 
+
+```python
+plt.hist(titanic_preprocessed[:,2], alpha=0.5, label='After discretization')
+```
+
+**Solution:** 
+
+```python
+plt.hist(titanic_preprocessed[:,0], alpha=0.5, label='Before discretization')
+```
+
+Both errors involve incorrect histogram plotting: Error 1 uses a label that may not match the actual age data, while Error 2 selects the wrong column from titanic_preprocessed. These need to be corrected to ensure the graphs accurately compare age data before and after discretization.
 
 ## Note on AI tools
 
