@@ -54,7 +54,7 @@ Error in Chapter 6,
 #find outliers
 outliers = data[np.abs(z_scores) > 3]
 print("Outliers: ", outliers)
--
+
 In chapter 6 Outliers, All the cell run smoothly but we noticed that when we run the cell 5 #find outliers
 
 ## Note on AI tools
