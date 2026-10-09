@@ -52,7 +52,7 @@ Upon executing all the chapters, when it comes to the code, all of our chapter n
 
 Error in Chapter 6,
 
-# #find outliers
+#find outliers
 
 outliers = data[np.abs(z_scores) > 3]
 
@@ -61,7 +61,9 @@ print("Outliers: ", outliers)
 Solution in chapter 6,
 
 #find outliers
+
 outliers = data[np.abs(z_scores) > 2.61]
+
 print("Outliers: ", outliers)
 
 In chapter 6 Outliers, All the cell run smoothly but we noticed that when we run the cell 5 we found out that the output in #find outliers is empty due to the reason that on the given code outliers = data[np.abs(z_scores) > 3] is written, but it should be outliers = data[np.abs(z_scores) > 2.61] because the output should be [100] and the Z-score is approximately 2.61.
