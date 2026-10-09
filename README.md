@@ -60,8 +60,6 @@ outliers = data[np.abs(z_scores) > 3]
 print("Outliers: ", outliers)
 ```
 
-The expected output is `[100]`, but its Z-score is only about **2.61**, which is below the threshold, so nothing was detected.
-
 **Solution:** Lower the threshold to 2.61:
 
 ```python
@@ -76,7 +74,7 @@ print("Outliers: ", outliers)
 Outliers:  [100]
 ```
 
-In chapter 6 Outliers, All the cell run smoothly but we noticed that when we run the cell 5 we found out that the output in #find outliers is empty due to the reason that on the given code outliers = data[np.abs(z_scores) > 3] is written, but it should be outliers = data[np.abs(z_scores) > 2.61] because the output should be [100] and the Z-score is approximately 2.61.
+In chapter 6 Outliers, All the cell run smoothly but we noticed that when we run the cell 5 we found out that the output in #find outliers is empty due to the reason that on the given code outliers = data[np.abs(z_scores) > 3] is written, but it should be outliers = data[np.abs(z_scores) > 2.61] because the output should be [100] and the Z-score is approximately 2.61. 
 
 ### Chapter 7 (Feature Selection): Warnings in `RFECV`
 
