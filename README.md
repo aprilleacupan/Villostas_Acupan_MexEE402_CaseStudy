@@ -52,7 +52,7 @@ Upon executing all the chapters, when it comes to the code, all of our chapter n
 
 Error in Chapter 6,
 
-#find outliers
+# #find outliers
 
 outliers = data[np.abs(z_scores) > 3]
 
