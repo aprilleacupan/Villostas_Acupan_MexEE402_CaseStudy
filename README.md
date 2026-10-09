@@ -78,15 +78,19 @@ Outliers:  [100]
 
 In chapter 6 Outliers, All the cell run smoothly but we noticed that when we run the cell 5 we found out that the output in #find outliers is empty due to the reason that on the given code outliers = data[np.abs(z_scores) > 3] is written, but it should be outliers = data[np.abs(z_scores) > 2.61] because the output should be [100] and the Z-score is approximately 2.61.
 
-### Chapter 7 (Feature Selection):
+### Chapter 7 (Feature Selection): Warnings in `RFECV`
 
-**Error:**
+**Error:** 
+
 ```python
 selector = RFECV(estimator, step=1, cv=5)
+```
 
 **Solution:** 
+
 ```python
 selector = RFECV(estimator, step=1, cv=3)
+```
 
 The problem in Cell 14 is that RFECV uses cv=5 on a dataset with only 7 rows, resulting in validation folds that are too small to calculate the R 2 score reliably. The solution is to change cv=5 to cv=3, giving each validation fold more samples. We need to fix this to reduce the warnings and make the feature selection results more reliable, although a dataset of only 7 rows is still too small for strong conclusions.
 
