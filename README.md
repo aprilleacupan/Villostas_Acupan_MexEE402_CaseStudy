@@ -47,8 +47,20 @@ Batangas State University, Alangilan Campus
 <p align="justify">We understood how all the preprocessing steps we learned before come together on one real dataset, the Titanic. We learned how to handle the numerical and categorical columns separately, where missing values are filled with the median for the numbers and with "missing" for the categories, then the numbers are scaled and the categories are one-hot encoded. We also learned how to use discretization to turn Age into life stages like Child, Adult, and Elderly instead of exact ages. What surprised us is that Pclass is treated as a category even though it is a number, because it stands for a class and not an amount. We also understood why we make plots after preprocessing: they help us check if the cleaning worked and make the patterns in the data easier to see.</p>
 
 ## Errors we found
+### Chapter 1: Introduction to Data Pre-processing
 
-The problem we encountered in Chapters 1, 2, and 3 is that an error occurs when uploading the vgsales.csv file to the chapter's content. Every time we rerun the file, the uploaded vgsales.csv file is removed.
+**Error:** The problem we encountered in Chapters 1, 2, and 3 is that an error occurs when uploading the `vgsales.csv` file to the notebook. Every time the runtime resets, the uploaded `vgsales.csv` file is removed because files uploaded to Colab are only stored temporarily.
+
+**Solution:** We added an upload cell at the beginning of the notebook that prompts us to upload `vgsales.csv` each time we run it, so the file is always available before the data is loaded.
+
+```python
+from google.colab import files
+import pandas as pd
+
+uploaded = files.upload()   # a "Choose Files" button appears; select vgsales.csv
+df = pd.read_csv('vgsales.csv')
+df.head()
+```
 
 ### Chapter 6 (Outliers): Empty output when finding outliers
 
