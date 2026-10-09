@@ -94,9 +94,7 @@ The error in Cell 14 is that RFECV uses cv=5 on a dataset with only 7 rows, resu
 
 ### Chapter 9 (Real-World Application: Data Preprocessing): 
 
-#### Error 1
-
-**Error :** 
+**Error 1:** 
 
 ```python
 plt.hist(data['Age'].dropna(), alpha=0.5, label='Before discretization')
@@ -108,9 +106,7 @@ plt.hist(data['Age'].dropna(), alpha=0.5, label='Before discretization')
 plt.hist(data['Age'].dropna(), alpha=0.5, label='After discretization')
 ```
 
-#### Error 2
-
-**Error:** 
+**Error 2:** 
 
 ```python
 plt.hist(titanic_preprocessed[:,2], alpha=0.5, label='After discretization')
